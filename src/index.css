@@ -5,16 +5,21 @@
 @custom-variant dark (&:is(.dark *));
 
 *{
-  /* outline:1px solid red; */
+  /*! debugging purposes outline:1px solid red; */
 }
+
+
+
+
 
 @layer base {
   body {
     background-color: var(--color-neutral-900);
     font-family: var(--font-sora);
     color: var(--color-neutral-400);
-    padding: 1rem;
-    /* min-height: 100dvh; */
+    /*! padding: 1rem;*/
+    /*! causes layout shift with select component  */
+    /*? min-height: 100dvh; */
   }
 }
 /* variables */
